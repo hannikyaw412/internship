@@ -1,0 +1,14 @@
+h1{
+    height: 70px;
+    text-align: center;
+    font-weight: 40px;
+    font-style: italic;
+    padding-top: 20px;
+
+}
+.mat-drawer-container {
+    background-color: #fafafa;
+    color: rgba(0,0,0,.87);
+    height: 100%;
+}
+
