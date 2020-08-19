@@ -11,17 +11,20 @@ export class SingerCreateComponent implements OnInit {
 
   addSingerForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private _router: Router) {
+  constructor(
+    private fb: FormBuilder,
+    private _router: Router
+  ) {
 
   }
 
-  singer() { 
+  singer() {
 
     this.addSingerForm = this.fb.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required, Validators.pattern("[0-9]{11}")]],
       address: ['', Validators.required],
-      gender :['', Validators.required]
+      gender: ['', Validators.required]
 
     });
   }
@@ -33,13 +36,13 @@ export class SingerCreateComponent implements OnInit {
     this._router.navigate(['./singer']);
   }
 
-  
-  
+
+
 
   ngOnInit(): void {
 
     this.singer();
-    
+
   }
 
 }

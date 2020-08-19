@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { StudioService } from './studio.service';
 
 @Component({
   selector: 'app-studio',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudioComponent implements OnInit {
 
-  constructor() { }
+  studioLists = [];
+
+  constructor(private studioService: StudioService,
+    private _router: Router) { }
 
   ngOnInit(): void {
+    this.studioLists = this.studioService.getStudio();
+  }
+  
+  goToCreate() {
+    this._router.navigate(['studio/create']);
   }
 
 }

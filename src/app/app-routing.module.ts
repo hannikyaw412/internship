@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 
 
 export const routes: Routes = [
-  {
-    path: '', component: AppComponent, children: [
+ // {
+    //path: '', component: AppComponent, children: [
       { path: '', redirectTo: 'singer', pathMatch: 'full' },
 
       {
@@ -44,8 +44,8 @@ export const routes: Routes = [
         loadChildren: () => import('./writer/writer.module').then(m => m.WriterModule)
       },
 
-    ]
-  }
+   // ]
+  //}
 ];
 
 

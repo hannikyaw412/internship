@@ -1,6 +1,6 @@
 <div class="container pt-4">
     <h3>Create new Production</h3>
-     <form [formGroup]="createProductionForm" (ngSubmit)="onSubmit()"> 
+     <form [formGroup]="createProductionForm" (ngSubmit)="onCreate()"> 
          <div class="form-group row">
              <label class="col-sm-2 col-form-label">Name</label>
              <div class="col-sm-5">
@@ -27,7 +27,7 @@
            <div class="form-group row">
                <div class="col-sm-2"></div>
              <div class="col-sm-10">
-               <button type="submit" class="btn btn-primary" [disabled]="!createProductionForm.valid"> Create</button>
+               <button type="submit" class="btn btn-secondary" [disabled]="!createProductionForm.valid"> Create</button>
              </div>
            </div>
        </form>

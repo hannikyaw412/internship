@@ -16,7 +16,7 @@ export class WriterComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    console.log('come');
+    
     this.writerLists = this.writerService.getWriter();
   }
 

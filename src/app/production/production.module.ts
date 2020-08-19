@@ -5,7 +5,8 @@ import { ProductionListComponent } from './production-list/production-list.compo
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProductionService } from './production.service';
 import { ProductionComponent } from './production.component';
-
+import { ProductionRoutingModule } from './production-routing.module'
+import { FormsModule} from '@angular/forms'
 
 
 @NgModule({ 
@@ -15,7 +16,9 @@ import { ProductionComponent } from './production.component';
     ProductionComponent],
   imports: [
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    ProductionRoutingModule
 
   ],
   providers :[ProductionService]

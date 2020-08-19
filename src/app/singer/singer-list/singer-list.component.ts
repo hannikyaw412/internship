@@ -9,19 +9,9 @@ import { Router } from '@angular/router'
 })
 export class SingerListComponent implements OnInit {
 
-  constructor(
-    private singerService: SingerService,
-    private _router: Router
-  ) { }
+  constructor() { }
 
-  //   singerLists = [];
+
   ngOnInit(): void {
-
-    //     this.singerLists = this.singerService.getSinger();
-
-    //   }
-    //   goTo() {
-    //     console.log("component change");
-    //     this._router.navigate(['/singer-create']);
   }
 }

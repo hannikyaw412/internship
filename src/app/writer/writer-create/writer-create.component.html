@@ -14,7 +14,7 @@
            <label class="col-sm-2 col-form-label">Phone No</label>
            <div class="col-sm-5">
              <input type="text" class="form-control" formControlName="phone" >
-             <small *ngIf="addWriterForm.get('phone').touched && addWriterForm.get('phone').hasError('required')"> please enter writer,s  phone nunmer</small>
+             <small *ngIf="addWriterForm.get('phone').touched && addWriterForm.get('phone').hasError('required')"> please enter writer,s  phone number</small>
            </div>
          </div>
          <br>
@@ -23,7 +23,8 @@
            <label class="col-sm-2 col-form-label">Address</label>
            <div class="col-sm-5">
              <input type="text" class="form-control" formControlName="address" >
-             <small *ngIf="addWriterForm.get('address').touched && addWriterForm.get('address').hasError('required')"> please enter writer,s  phone nunmer</small>
+             <small *ngIf="addWriterForm.get('address').touched && addWriterForm.get('address').hasError('required')">
+                please enter writer,s  address</small>
            </div>
          </div>
          <br>
@@ -45,7 +46,7 @@
          <div class="form-group row">
              <div class="col-sm-2"></div>
            <div class="col-sm-10">
-             <button type="submit" class="btn btn-primary" [disabled]="!addWriterForm.valid"> Create</button>
+             <button type="submit" class="btn btn-secondary" [disabled]="!addWriterForm.valid"> Create</button>
            </div>
          </div>
      </form>
