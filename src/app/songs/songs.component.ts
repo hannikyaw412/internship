@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { SongsService } from './songs.service';
+import { SingerService } from '../singer/singer.service';
+
 
 @Component({
   selector: 'app-songs',
@@ -7,9 +12,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SongsComponent implements OnInit {
 
-  constructor() { }
+  songLists = [];
+
+
+  constructor(
+    private _router: Router,
+    private songService: SongsService,
+  ) { }
 
   ngOnInit(): void {
+    //this.songLists=this.songService.list();
+
+  }
+  goToCreate() {
+    this._router.navigate(['/songs/create']);
   }
 
 }

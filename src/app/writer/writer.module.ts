@@ -1,6 +1,5 @@
 import { NgModule , NO_ERRORS_SCHEMA} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { WriterListComponent } from './writer-list/writer-list.component';
 import { WriterCreateComponent } from './writer-create/writer-create.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WriterService } from './writer.service';
@@ -10,7 +9,6 @@ import { WriterRoutingModule } from './writer-routing.module';
 
 @NgModule({
   declarations: [
-    WriterListComponent,
     WriterCreateComponent,
     WriterComponent
   ],

@@ -15,16 +15,16 @@
                 <tr>
                     <th>Name</th>
                     <th>Member</th>
-                    <th>Phone No:</th>
                     <th>Address</th>
+                    <th>Phone No:</th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let bandList of bandLists">
                     <td>{{bandList.singrerName}}</td>
                     <td>{{ bandList.groupMember }}</td>
-                    <td>{{ bandList.phone }}</td>
                     <td>{{ bandList.address }}</td>
+                    <td>{{ bandList.phone }}</td>
                 </tr>
             </tbody>
         </table>

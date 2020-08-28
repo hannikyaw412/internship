@@ -1,28 +1,32 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AlbumCreateComponent } from './album-create/album-create.component';
-import { AlbumListComponent } from './album-list/album-list.component';
 import { AlbumComponent } from './album.component';
 import { AlbumRoutingModule } from './album-routing.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AlbumService } from './album.service';
 //import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSelectModule} from '@angular/material/select'; 
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 @NgModule({
   declarations: [
     AlbumCreateComponent,
-    AlbumListComponent,
     AlbumComponent],
   imports: [
     CommonModule,
     AlbumRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    MatSelectModule
+    MatSelectModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
 
   ],
-  providers : [AlbumService],
+  providers: [AlbumService],
 })
 export class AlbumModule { }

@@ -14,7 +14,7 @@ export class BandService {
         {singrerName : "Wai La" , groupMember :"7" ,phone :"09761275382" , address :"(53)Street, Yangon"  },
         {singrerName : "Shwe Htoo" , groupMember :"4" ,phone :"09761275382" , address :"Mayangone Tsp"  },
         {singrerName : "Bunny Phyo" , groupMember :"6" ,phone :"09761275382" , address :"(23)Street , Yangon" },
-        {singrerName : "Mi Sandi" , groupMember:"5" , phone :"09761275382" , address :"(2)Q, Yangon" }
+        {singrerName : "Mi Sandi" , groupMember:"5" , phone :"09761275382" , address :"(2)Q, Mayangone Township, Yangon"}
       ];
       return bandList;
     }

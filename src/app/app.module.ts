@@ -26,16 +26,20 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { SidebarComponent } from './home/sidebar/sidebar.component';
-import { FooterComponent } from './home/footer/footer.component';
 import { MatSelectModule } from '@angular/material/select';
 import { HomeRoutingModule } from './home/home-routing.module';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    FooterComponent,
-
+    
   ],
   imports: [
     BrowserModule,
@@ -63,6 +67,9 @@ import { HomeRoutingModule } from './home/home-routing.module';
     MatIconModule,
     MatListModule,
     HomeRoutingModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule
 
 
   ],

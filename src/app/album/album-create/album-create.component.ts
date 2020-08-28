@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatInputModule } from '@angular/material/input';
+
 
 interface Album {
   value: number;
@@ -30,7 +34,7 @@ export class AlbumCreateComponent implements OnInit {
       title: ['', Validators.required],
       type: ['', Validators.required],
       date: ['', Validators.required]
-      
+
     });
   }
 
